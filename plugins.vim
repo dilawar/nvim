@@ -1,5 +1,7 @@
 " Plugin manager provided by: https://github.com/junegunn/vim-plug
 call plug#begin('~/.config/nvim/plugged')
+Plug 'SirVer/ultisnips'
+Plug 'dilawar/vim-snippets'
 Plug 'https://github.com/rking/ag.vim'
 Plug 'https://github.com/chriskempson/base16-vim.git'
 Plug 'https://github.com/AndrewRadev/sideways.vim'
@@ -10,7 +12,6 @@ Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/mxw/vim-jsx'
 Plug 'https://github.com/alampros/vim-styled-jsx'
 Plug 'https://github.com/altercation/vim-colors-solarized'
-Plug 'https://github.com/ecomba/vim-ruby-refactoring'
 Plug 'https://github.com/vim-scripts/dbext.vim'
 Plug 'https://github.com/gcavallanti/vim-noscrollbar'
 Plug 'https://github.com/godlygeek/tabular'
