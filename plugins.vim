@@ -1,34 +1,36 @@
 " Plugin manager provided by: https://github.com/junegunn/vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'https://github.com/rking/ag.vim'
-Plug 'https://github.com/chriskempson/base16-vim.git'
-Plug 'https://github.com/AndrewRadev/sideways.vim'
-Plug 'https://github.com/airblade/vim-gitgutter.git'
-Plug 'https://github.com/altercation/vim-colors-solarized'
-Plug 'https://github.com/vim-scripts/dbext.vim'
-Plug 'https://github.com/godlygeek/tabular'
-Plug 'https://github.com/Glench/Vim-Jinja2-Syntax.git'
-Plug 'https://github.com/haya14busa/incsearch.vim'
-Plug 'https://github.com/jeetsukumaran/vim-indentwise'
-Plug 'https://github.com/plasticboy/vim-markdown'
-Plug 'https://github.com/Quramy/vim-js-pretty-template'
-Plug 'https://github.com/rust-lang/rust.vim.git'
-Plug 'https://github.com/roxma/vim-tmux-clipboard'
+Plug 'rking/ag.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'AndrewRadev/sideways.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'altercation/vim-colors-solarized'
+Plug 'vim-scripts/dbext.vim'
+Plug 'godlygeek/tabular'
+Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'haya14busa/incsearch.vim'
+Plug 'jeetsukumaran/vim-indentwise'
+Plug 'plasticboy/vim-markdown'
+Plug 'Quramy/vim-js-pretty-template'
+Plug 'rust-lang/rust.vim'
+Plug 'roxma/vim-tmux-clipboard'
 
 " Use my personal version until changes are accepted by @tpope
-Plug 'https://github.com/tpope/vim-commentary'
-Plug 'https://github.com/tpope/vim-endwise'
-Plug 'https://github.com/tpope/vim-fugitive'
-Plug 'https://github.com/tpope/vim-surround'
-Plug 'https://github.com/tpope/vim-unimpaired.git'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 
 " Linting
-Plug 'https://github.com/w0rp/ale'
+Plug 'w0rp/ale'
 
+" personal
 Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
 Plug 'ervandew/supertab'
+Plug 'chrisbra/unicode.vim'
 
 
 " Keep this at the end!
