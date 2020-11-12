@@ -28,6 +28,8 @@ Plug 'https://github.com/w0rp/ale'
 
 Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
+Plug 'ervandew/supertab'
+
 
 " Keep this at the end!
 call plug#end()
