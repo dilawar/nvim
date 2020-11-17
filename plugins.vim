@@ -23,8 +23,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
+Plug 'rhysd/vim-clang-format'
+
 " Linting
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 " personal
 Plug 'SirVer/ultisnips'
