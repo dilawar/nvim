@@ -3,17 +3,12 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'rking/ag.vim'
 Plug 'chriskempson/base16-vim'
-Plug 'AndrewRadev/sideways.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
-Plug 'vim-scripts/dbext.vim'
 Plug 'godlygeek/tabular'
-Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'haya14busa/incsearch.vim'
 Plug 'jeetsukumaran/vim-indentwise'
 Plug 'plasticboy/vim-markdown'
-Plug 'Quramy/vim-js-pretty-template'
-Plug 'rust-lang/rust.vim'
 Plug 'roxma/vim-tmux-clipboard'
 
 " Use my personal version until changes are accepted by @tpope
@@ -28,12 +23,20 @@ Plug 'rhysd/vim-clang-format'
 " Linting
 Plug 'dense-analysis/ale'
 
+" Airline
+Plug 'vim-airline/vim-airline'
+
 " personal
 Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
 Plug 'ervandew/supertab'
 Plug 'chrisbra/unicode.vim'
 
+" python
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'davidhalter/jedi-vim'
+Plug 'deoplete-plugins/deoplete-jedi'
+let g:deoplete#enable_at_startup = 1
 
 " Keep this at the end!
 call plug#end()

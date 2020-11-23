@@ -12,6 +12,7 @@ set number
 set relativenumber
 set showcmd
 set virtualedit=block
+set norelativenumber
 
 set undodir=$HOME/.undodir
 set undofile
