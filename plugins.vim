@@ -20,11 +20,12 @@ Plug 'tpope/vim-unimpaired'
 
 Plug 'rhysd/vim-clang-format'
 
-" Linting
-Plug 'dense-analysis/ale'
-
 " Airline
 Plug 'vim-airline/vim-airline'
+
+" Linting
+Plug 'dense-analysis/ale'
+let g:airline#extensions#ale#enabled = 1
 
 " personal
 Plug 'SirVer/ultisnips'
@@ -37,6 +38,16 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'davidhalter/jedi-vim'
 Plug 'deoplete-plugins/deoplete-jedi'
 let g:deoplete#enable_at_startup = 1
+
+" Easy align
+Plug 'junegunn/vim-easy-align'
+
+
+"" LucHermite
+Plug 'tomtom/stakeholders_vim'
+Plug 'LucHermitte/lh-vim-lib'
+Plug 'LucHermitte/alternate-lite'
+
 
 " Keep this at the end!
 call plug#end()
