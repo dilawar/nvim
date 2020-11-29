@@ -48,6 +48,10 @@ Plug 'tomtom/stakeholders_vim'
 Plug 'LucHermitte/lh-vim-lib'
 Plug 'LucHermitte/alternate-lite'
 
+" pydocstring
+Plug 'heavenshell/vim-pydocstring'
+let g:pydocstring_formatter = 'numpy'
+
 
 " Keep this at the end!
 call plug#end()
