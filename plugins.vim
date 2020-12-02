@@ -49,8 +49,12 @@ Plug 'LucHermitte/lh-vim-lib'
 Plug 'LucHermitte/alternate-lite'
 
 " pydocstring
-Plug 'heavenshell/vim-pydocstring'
+Plug 'heavenshell/vim-pydocstring', {'do': 'make install'}
 let g:pydocstring_formatter = 'numpy'
+let g:pydocstring_doq_path = "$HOME/.local/bin/doq"
+
+" Doxygen
+Plug 'vim-scripts/DoxygenToolkit.vim'
 
 
 " Keep this at the end!
