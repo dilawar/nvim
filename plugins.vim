@@ -38,6 +38,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'davidhalter/jedi-vim'
 Plug 'deoplete-plugins/deoplete-jedi'
 let g:deoplete#enable_at_startup = 1
+Plug 'dilawar/vim-mypy'
 
 " Easy align
 Plug 'junegunn/vim-easy-align'
