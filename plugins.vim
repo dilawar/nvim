@@ -41,9 +41,20 @@ let g:ale_php_phpcs_executable='./vendor/bin/phpcs'
 let g:ale_php_php_cs_fixer_executable='./vendor/bin/php-cs-fixer'
 let g:ale_fixers={'php' : [ 'php_cs_fixer' ]}
 
+"" Does not work very well with mixed CPP/Python files.
+" Plug 'vim-syntastic/syntastic'
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+
 " personal
 Plug 'SirVer/ultisnips'
-Plug 'dilawar/vim-snippets'
+Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
 Plug 'chrisbra/unicode.vim'
 
@@ -57,6 +68,10 @@ Plug 'dilawar/vim-mypy'
 " Easy align
 Plug 'junegunn/vim-easy-align'
 
+" plugins
+Plug 'chrisbra/unicode.vim'
+" Turn TeX symbols into unicode.
+Plug 'dilawar/vim-unicoder'
 
 "" LucHermite
 Plug 'tomtom/stakeholders_vim'
