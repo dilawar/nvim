@@ -26,3 +26,7 @@ set clipboard+=unnamedplus
 
 set textwidth=80 
 set colorcolumn=81
+
+let $VIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
+colorscheme slate

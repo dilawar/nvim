@@ -26,6 +26,20 @@ Plug 'vim-airline/vim-airline'
 " Linting
 Plug 'dense-analysis/ale'
 let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
+let g:ale_cpp_gcc_options = '-std=c++17'
+let g:ale_tex_chktex_options = '-n26 -n18'
+let g:ale_linters = {
+            \ 'python' : [ 'pyflakes'], 
+            \ 'php' : [ 'php-cs-fixer', 'psalm', 'php'], 
+            \}
+let g:ale_php_phpcs_executable='./vendor/bin/phpcs'
+let g:ale_php_php_cs_fixer_executable='./vendor/bin/php-cs-fixer'
+let g:ale_fixers={'php' : [ 'php_cs_fixer' ]}
 
 " personal
 Plug 'SirVer/ultisnips'
