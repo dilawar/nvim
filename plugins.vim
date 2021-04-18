@@ -53,10 +53,17 @@ let g:ale_fixers={'php' : [ 'php_cs_fixer' ]}
 " let g:syntastic_check_on_wq = 0
 
 " personal
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
 Plug 'chrisbra/unicode.vim'
+
+" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'dilawar/vim-snippets'
+let g:snips_author = "Dilawar Singh"
+let g:snips_email = "dilawar@subcom.tech"
+" let g:UltiSnipsExpandTrigger="<c-space>"
+" let g:UltiSnipsJumpForwardTrigger="<c-j>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " python
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
