@@ -24,6 +24,7 @@ Plug 'rhysd/vim-clang-format'
 Plug 'vim-airline/vim-airline'
 
 " Linting
+Plug 'rust-lang/rust.vim'
 Plug 'dense-analysis/ale'
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#ale#enabled = 1
