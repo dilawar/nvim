@@ -27,7 +27,7 @@ set clipboard+=unnamedplus
 set textwidth=80 
 set colorcolumn=81
 
-colorscheme blue
+colorscheme default
 " Allow loading for folder specific vimrc files.
 set exrc
 set secure

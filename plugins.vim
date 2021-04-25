@@ -66,10 +66,10 @@ let g:snips_email = "dilawar@subcom.tech"
 " let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " python
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'davidhalter/jedi-vim'
-Plug 'deoplete-plugins/deoplete-jedi'
-let g:deoplete#enable_at_startup = 1
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'davidhalter/jedi-vim'
+" Plug 'deoplete-plugins/deoplete-jedi'
+" let g:deoplete#enable_at_startup = 1
 Plug 'dilawar/vim-mypy'
 
 " Easy align
