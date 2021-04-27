@@ -34,5 +34,5 @@ set secure
 
 " Write to a temp file and read from it.
 vmap <leader>y :w! /tmp/vitmp<CR>
+nmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
-

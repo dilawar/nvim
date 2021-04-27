@@ -43,20 +43,6 @@ let g:ale_php_phpcs_executable='./vendor/bin/phpcs'
 let g:ale_php_php_cs_fixer_executable='./vendor/bin/php-cs-fixer'
 let g:ale_fixers={'php' : [ 'php_cs_fixer' ], 'rust': ['rustfmt'], }
 
-"" Does not work very well with mixed CPP/Python files.
-" Plug 'vim-syntastic/syntastic'
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-" 
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-
-" personal
-Plug 'ervandew/supertab'
-Plug 'chrisbra/unicode.vim'
 
 " Snippets
 Plug 'SirVer/ultisnips'
@@ -82,10 +68,10 @@ Plug 'chrisbra/unicode.vim'
 " Turn TeX symbols into unicode.
 Plug 'dilawar/vim-unicoder'
 
-"" LucHermite
-Plug 'tomtom/stakeholders_vim'
-Plug 'LucHermitte/lh-vim-lib'
-Plug 'LucHermitte/alternate-lite'
+""" LucHermite
+"Plug 'tomtom/stakeholders_vim'
+"Plug 'LucHermitte/lh-vim-lib'
+"Plug 'LucHermitte/alternate-lite'
 
 " pydocstring
 Plug 'heavenshell/vim-pydocstring', {'do': 'make install'}
@@ -94,6 +80,11 @@ let g:pydocstring_doq_path = "$HOME/.local/bin/doq"
 
 " Doxygen
 Plug 'vim-scripts/DoxygenToolkit.vim'
+
+" personal
+Plug 'ervandew/supertab'
+Plug 'chrisbra/unicode.vim'
+Plug 'tomtom/tcomment_vim'
 
 
 " Keep this at the end!
