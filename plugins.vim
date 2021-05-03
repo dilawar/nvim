@@ -86,6 +86,10 @@ Plug 'ervandew/supertab'
 Plug 'chrisbra/unicode.vim'
 Plug 'tomtom/tcomment_vim'
 
+" php
+Plug 'StanAngeloff/php.vim'
+Plug 'stephpy/vim-php-cs-fixer'
+Plug 'ncm2/ncm2'
 
 " Keep this at the end!
 call plug#end()
