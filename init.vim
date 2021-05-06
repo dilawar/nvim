@@ -17,14 +17,14 @@ set norelativenumber
 set undodir=$HOME/.undodir
 set undofile
 
-set tabstop=4 
-set shiftwidth=4 
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " System clipboard
 set clipboard+=unnamedplus
 
-set textwidth=80 
+set textwidth=80
 set colorcolumn=81
 
 colorscheme zellner
@@ -37,3 +37,17 @@ set secure
 vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
+
+" Strip whitespaces
+function! <SID>StripTrailingWhitespaces()
+    if !&binary && &filetype != 'diff'
+        let l:save = winsaveview()
+        keeppatterns %s/\s\+$//e
+        call winrestview(l:save)
+    endif
+endfun
+
+autocmd FileType c,cpp,java,php,ruby,python,vue,js autocmd BufWritePre <buffer> \
+    :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre,FileWritePre,FileAppendPre,FilterWritePre * \
+    :call <SID>StripTrailingWhitespaces()

@@ -91,5 +91,8 @@ Plug 'StanAngeloff/php.vim'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'ncm2/ncm2'
 
+" vue
+Plug 'posva/vim-vue'
+
 " Keep this at the end!
 call plug#end()
