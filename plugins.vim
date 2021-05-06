@@ -36,12 +36,19 @@ let g:ale_cpp_gcc_options = '-std=c++17'
 let g:ale_tex_chktex_options = '-n26 -n18'
 let g:ale_linters = {
             \ 'python' : [ 'pyflakes'],
+            \ 'javascript' : [ 'eslint'],
             \ 'rust' : [ 'analyzer', 'cargo'],
             \ 'php' : [ 'php-cs-fixer', 'psalm', 'php'],
             \}
+
 let g:ale_php_phpcs_executable='./vendor/bin/phpcs'
 let g:ale_php_php_cs_fixer_executable='./vendor/bin/php-cs-fixer'
-let g:ale_fixers={'php' : [ 'php_cs_fixer' ], 'rust': ['rustfmt'], }
+
+let g:ale_fixers={
+        \ 'php' : [ 'php_cs_fixer' ],
+        \ 'rust': ['rustfmt'],
+        \ 'javascript': ['eslint'],
+        \}
 
 
 " Snippets
@@ -49,15 +56,11 @@ Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
 let g:snips_author = "Dilawar Singh"
 let g:snips_email = "dilawar@subcom.tech"
-" let g:UltiSnipsExpandTrigger="<c-space>"
-" let g:UltiSnipsJumpForwardTrigger="<c-j>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsExpandTrigger="<c-space>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " python
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'davidhalter/jedi-vim'
-" Plug 'deoplete-plugins/deoplete-jedi'
-" let g:deoplete#enable_at_startup = 1
 Plug 'dilawar/vim-mypy'
 
 " Easy align
@@ -93,6 +96,8 @@ Plug 'ncm2/ncm2'
 
 " vue
 Plug 'posva/vim-vue'
+let g:vue_pre_processors=['pug', 'scss']
+au BufNewFile,BufRead *.vue set ts=2 sw=2
 
 " strip whitespace
 Plug 'itspriddle/vim-stripper'
