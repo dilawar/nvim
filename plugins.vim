@@ -97,7 +97,6 @@ Plug 'ncm2/ncm2'
 " vue
 Plug 'posva/vim-vue'
 let g:vue_pre_processors=['pug', 'scss']
-au BufNewFile,BufRead *.vue set ts=2 sw=2
 
 " strip whitespace
 Plug 'itspriddle/vim-stripper'

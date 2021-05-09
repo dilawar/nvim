@@ -37,3 +37,5 @@ set secure
 vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
+
+au BufNewFile,BufRead *.vue,*.js,*.html setlocal expandtab ts=2 sw=2
