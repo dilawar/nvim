@@ -105,6 +105,9 @@ Plug 'itspriddle/vim-stripper'
 Plug 'alvan/vim-closetag'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'
 
+" nim
+Plug 'zah/nim'
+
 
 " Keep this at the end!
 call plug#end()
