@@ -106,7 +106,12 @@ Plug 'alvan/vim-closetag'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'
 
 " nim
-Plug 'zah/nim'
+Plug 'zah/nim.vim'
+
+"" LucHermite
+Plug 'tomtom/stakeholders_vim'
+Plug 'LucHermitte/lh-vim-lib'
+Plug 'LucHermitte/alternate-lite'
 
 
 " Keep this at the end!
