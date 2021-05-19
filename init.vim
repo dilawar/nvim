@@ -39,3 +39,8 @@ nmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
 
 au BufNewFile,BufRead *.vue,*.js,*.html setlocal expandtab ts=2 sw=2
+
+" errorformat. dont stop at warning
+" See https://stackoverflow.com/a/14871596/1805129
+set errorformat^=%-G%f:%l:\ warning:%m
+set backupdir=$HOME/.cache/vim_backup

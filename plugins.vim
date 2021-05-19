@@ -18,7 +18,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
+" clang-format'
 Plug 'rhysd/vim-clang-format'
+let g:clang_format#style_options = {"BasedOnStyle" : "Mozilla"}
 
 " Airline
 Plug 'vim-airline/vim-airline'
@@ -106,7 +108,7 @@ Plug 'alvan/vim-closetag'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'
 
 " nim
-Plug 'zah/nim.vim'
+Plug 'alaviss/nim.nvim'
 
 "" LucHermite
 Plug 'tomtom/stakeholders_vim'
