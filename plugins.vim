@@ -58,9 +58,7 @@ Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
 let g:snips_author = "Dilawar Singh"
 let g:snips_email = "dilawar@subcom.tech"
-let g:UltiSnipsExpandTrigger="<c-space>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:snips_github = "https://github.com/dilawar"
 
 " python
 Plug 'dilawar/vim-mypy'
@@ -98,7 +96,7 @@ Plug 'ncm2/ncm2'
 Plug 'dilawar/better-indent-support-for-php-with-html'
 
 Plug 'alvan/vim-closetag'
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'   
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'
 
 " colorscheme
 Plug 'flazz/vim-colorschemes'
