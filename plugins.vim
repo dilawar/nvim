@@ -37,7 +37,7 @@ let g:ale_fix_on_save = 1
 let g:ale_cpp_gcc_options = '-std=c++17'
 let g:ale_tex_chktex_options = '-n26 -n18'
 let g:ale_linters = {
-            \ 'python' : [ 'pyflakes'],
+            \ 'python' : [ 'pyflakes', 'pylint'],
             \ 'javascript' : [ 'eslint'],
             \ 'rust' : [ 'analyzer', 'cargo'],
             \ 'php' : [ 'php-cs-fixer', 'psalm', 'php'],
@@ -49,6 +49,7 @@ let g:ale_php_php_cs_fixer_executable='./vendor/bin/php-cs-fixer'
 let g:ale_fixers={
         \ 'php' : [ 'php_cs_fixer' ],
         \ 'rust': ['rustfmt'],
+        \ 'python': ['black'],
         \ 'javascript': ['eslint'],
         \}
 
@@ -57,7 +58,7 @@ let g:ale_fixers={
 Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
 let g:snips_author = "Dilawar Singh"
-let g:snips_email = "dilawar@subcom.tech"
+let g:snips_email = "dilawar.s.rajput@gmail.com"
 let g:snips_github = "https://github.com/dilawar"
 
 " python
