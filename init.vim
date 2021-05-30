@@ -34,7 +34,7 @@ set exrc
 set secure
 
 " php is html first
-au BufRead,BufNew *.php :setlocal sw=2 tw=2 ts=2 
+au BufRead,BufNew *.php :setlocal sw=2 tw=2 ts=2
 
 " Write to a temp file and read from it.
 vmap <leader>y :w! /tmp/vitmp<CR>
@@ -48,4 +48,8 @@ au BufNewFile,BufRead *.vue,*.js,*.html setlocal expandtab ts=2 sw=2
 set errorformat^=%-G%f:%l:\ warning:%m
 
 " backup.
+" Thanks https://stackoverflow.com/a/43880028/1805129
+if !isdirectory($HOME . "/.cache/vim/backup")
+    call  mkdir($HOME . "/.cache/vim/backup", "p", 0700)
+endif
 set backupdir=$HOME/.cache/vim/backup
