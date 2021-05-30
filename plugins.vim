@@ -90,6 +90,13 @@ Plug 'tomtom/tcomment_vim'
 Plug 'StanAngeloff/php.vim'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'ncm2/ncm2'
+Plug 'dilawar/better-indent-support-for-php-with-html'
+
+Plug 'alvan/vim-closetag'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'   
+
+" colorscheme
+Plug 'flazz/vim-colorschemes'
 
 " Keep this at the end!
 call plug#end()

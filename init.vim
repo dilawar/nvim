@@ -27,11 +27,14 @@ set clipboard+=unnamedplus
 set textwidth=80 
 set colorcolumn=81
 
-colorscheme zellner
+colorscheme materialbox
 
 " Allow loading for folder specific vimrc files.
 set exrc
 set secure
+
+" php is html first
+au BufRead,BufNew *.php :setlocal sw=2 tw=2 ts=2 
 
 " Write to a temp file and read from it.
 vmap <leader>y :w! /tmp/vitmp<CR>
