@@ -17,14 +17,14 @@ set norelativenumber
 set undodir=$HOME/.undodir
 set undofile
 
-set tabstop=4 
-set shiftwidth=4 
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " System clipboard
 set clipboard+=unnamedplus
 
-set textwidth=80 
+set textwidth=80
 set colorcolumn=81
 
 colorscheme materialbox
@@ -40,3 +40,12 @@ au BufRead,BufNew *.php :setlocal sw=2 tw=2 ts=2
 vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
+
+au BufNewFile,BufRead *.vue,*.js,*.html setlocal expandtab ts=2 sw=2
+
+" errorformat. dont stop at warning
+" See https://stackoverflow.com/a/14871596/1805129
+set errorformat^=%-G%f:%l:\ warning:%m
+
+" backup.
+set backupdir=$HOME/.cache/vim/backup
