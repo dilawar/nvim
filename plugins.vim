@@ -18,6 +18,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
+" c-support
+Plug 'WolfgangMehner/c-support'
+
+
 " clang-format'
 Plug 'rhysd/vim-clang-format'
 let g:clang_format#style_options = {"BasedOnStyle" : "Mozilla"}
@@ -25,8 +29,13 @@ let g:clang_format#style_options = {"BasedOnStyle" : "Mozilla"}
 " Airline
 Plug 'vim-airline/vim-airline'
 
-" Linting
+" rust
 Plug 'rust-lang/rust.vim'
+
+" Autocomplete and other
+" Plug 'ycm-core/YouCompleteMe'
+" let g:UltiSnipsExpandTrigger = ";"
+
 Plug 'dense-analysis/ale'
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#ale#enabled = 1
