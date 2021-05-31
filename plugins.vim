@@ -49,6 +49,7 @@ let g:ale_php_php_cs_fixer_executable='./vendor/bin/php-cs-fixer'
 let g:ale_fixers={
         \ 'php' : [ 'php_cs_fixer' ],
         \ 'rust': ['rustfmt'],
+        \ 'python': ['black'],
         \ 'javascript': ['eslint'],
         \}
 
@@ -120,6 +121,8 @@ Plug 'tomtom/stakeholders_vim'
 Plug 'LucHermitte/lh-vim-lib'
 Plug 'LucHermitte/alternate-lite'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Keep this at the end!
 call plug#end()
