@@ -46,7 +46,7 @@ let g:ale_fix_on_save = 1
 let g:ale_cpp_gcc_options = '-std=c++17'
 let g:ale_tex_chktex_options = '-n26 -n18'
 let g:ale_linters = {
-            \ 'python' : [ 'pyflakes'],
+            \ 'python' : [ 'bandit', 'pyflakes', 'pylint'],
             \ 'javascript' : [ 'eslint'],
             \ 'rust' : [ 'analyzer', 'cargo'],
             \ 'php' : [ 'php-cs-fixer', 'psalm', 'php'],
@@ -58,6 +58,7 @@ let g:ale_php_php_cs_fixer_executable='./vendor/bin/php-cs-fixer'
 let g:ale_fixers={
         \ 'php' : [ 'php_cs_fixer' ],
         \ 'rust': ['rustfmt'],
+        \ 'python': ['black'],
         \ 'javascript': ['eslint'],
         \}
 
@@ -66,10 +67,8 @@ let g:ale_fixers={
 Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
 let g:snips_author = "Dilawar Singh"
-let g:snips_email = "dilawar@subcom.tech"
-let g:UltiSnipsExpandTrigger="<c-space>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:snips_email = "dilawar.s.rajput@gmail.com"
+let g:snips_github = "https://github.com/dilawar"
 
 " python
 Plug 'dilawar/vim-mypy'
@@ -104,6 +103,13 @@ Plug 'tomtom/tcomment_vim'
 Plug 'StanAngeloff/php.vim'
 Plug 'stephpy/vim-php-cs-fixer'
 Plug 'ncm2/ncm2'
+Plug 'dilawar/better-indent-support-for-php-with-html'
+
+Plug 'alvan/vim-closetag'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'
+
+" colorscheme
+Plug 'flazz/vim-colorschemes'
 
 " vue
 Plug 'posva/vim-vue'
@@ -124,6 +130,8 @@ Plug 'tomtom/stakeholders_vim'
 Plug 'LucHermitte/lh-vim-lib'
 Plug 'LucHermitte/alternate-lite'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Keep this at the end!
 call plug#end()
