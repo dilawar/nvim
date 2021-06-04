@@ -81,11 +81,6 @@ Plug 'chrisbra/unicode.vim'
 " Turn TeX symbols into unicode.
 Plug 'dilawar/vim-unicoder'
 
-""" LucHermite
-"Plug 'tomtom/stakeholders_vim'
-"Plug 'LucHermitte/lh-vim-lib'
-"Plug 'LucHermitte/alternate-lite'
-
 " pydocstring
 Plug 'heavenshell/vim-pydocstring', {'do': 'make install'}
 let g:pydocstring_formatter = 'numpy'
@@ -105,8 +100,9 @@ Plug 'stephpy/vim-php-cs-fixer'
 Plug 'ncm2/ncm2'
 Plug 'dilawar/better-indent-support-for-php-with-html'
 
-Plug 'alvan/vim-closetag'
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'
+" Plug 'LucHermitte/lh-vim-lib'
+" Plug 'LucHermitte/lh-tags'
+Plug 'craigemery/vim-autotag'
 
 " colorscheme
 Plug 'flazz/vim-colorschemes'
@@ -125,10 +121,8 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue,*.php'
 " nim
 Plug 'alaviss/nim.nvim'
 
-"" LucHermite
-Plug 'tomtom/stakeholders_vim'
-Plug 'LucHermitte/lh-vim-lib'
-Plug 'LucHermitte/alternate-lite'
+" alternate
+Plug 'dilawar/a.vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'

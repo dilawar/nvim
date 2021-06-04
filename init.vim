@@ -52,4 +52,8 @@ set errorformat^=%-G%f:%l:\ warning:%m
 if !isdirectory($HOME . "/.cache/vim/backup")
     call  mkdir($HOME . "/.cache/vim/backup", "p", 0700)
 endif
+
 set backupdir=$HOME/.cache/vim/backup
+set backup
+set noswapfile
+
