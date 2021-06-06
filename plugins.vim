@@ -4,6 +4,9 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'plasticboy/vim-markdown'
 Plug 'roxma/vim-tmux-clipboard'
 
+" terminal
+Plug 'kassio/neoterm'
+
 " git
 Plug 'airblade/vim-gitgutter'
 
