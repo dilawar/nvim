@@ -56,4 +56,3 @@ endif
 set backupdir=$HOME/.cache/vim/backup
 set backup
 set noswapfile
-

@@ -1,15 +1,11 @@
 " Plugin manager provided by: https://github.com/junegunn/vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'rking/ag.vim'
-Plug 'chriskempson/base16-vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'altercation/vim-colors-solarized'
-Plug 'godlygeek/tabular'
-Plug 'haya14busa/incsearch.vim'
-Plug 'jeetsukumaran/vim-indentwise'
 Plug 'plasticboy/vim-markdown'
 Plug 'roxma/vim-tmux-clipboard'
+
+" git
+Plug 'airblade/vim-gitgutter'
 
 " Use my personal version until changes are accepted by @tpope
 Plug 'tpope/vim-commentary'
@@ -21,13 +17,9 @@ Plug 'tpope/vim-unimpaired'
 " c-support
 Plug 'WolfgangMehner/c-support'
 
-
 " clang-format'
 Plug 'rhysd/vim-clang-format'
 let g:clang_format#style_options = {"BasedOnStyle" : "Mozilla"}
-
-" Airline
-Plug 'vim-airline/vim-airline'
 
 " rust
 Plug 'rust-lang/rust.vim'
@@ -92,7 +84,6 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 " personal
 Plug 'ervandew/supertab'
 Plug 'chrisbra/unicode.vim'
-Plug 'tomtom/tcomment_vim'
 
 " php
 Plug 'StanAngeloff/php.vim'
@@ -100,8 +91,6 @@ Plug 'stephpy/vim-php-cs-fixer'
 Plug 'ncm2/ncm2'
 Plug 'dilawar/better-indent-support-for-php-with-html'
 
-" Plug 'LucHermitte/lh-vim-lib'
-" Plug 'LucHermitte/lh-tags'
 Plug 'craigemery/vim-autotag'
 
 " colorscheme
@@ -124,8 +113,11 @@ Plug 'alaviss/nim.nvim'
 " alternate
 Plug 'dilawar/a.vim'
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Keep this at the end!
 call plug#end()
