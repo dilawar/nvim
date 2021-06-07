@@ -57,6 +57,8 @@ set backupdir=$HOME/.cache/vim/backup
 set backup
 set noswapfile
 
+let mapleader="\\"
+
 " LSP
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gi    <cmd>lua vim.lsp.buf.implementation()<CR>
