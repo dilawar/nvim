@@ -7,6 +7,12 @@ Plug 'roxma/vim-tmux-clipboard'
 " terminal
 Plug 'kassio/neoterm'
 
+" new setup for beta
+Plug 'tjdevries/colorbuddy.vim'
+Plug 'Th3Whit3Wolf/onebuddy', {'branch': 'main'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
+
 " git
 Plug 'airblade/vim-gitgutter'
 
@@ -124,3 +130,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Keep this at the end!
 call plug#end()
+
+set termguicolors
+colorscheme onebuddy
+luafile $HOME/.config/nvim/lsp_config.lua
