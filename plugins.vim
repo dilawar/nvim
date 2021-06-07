@@ -31,13 +31,13 @@ Plug 'rhysd/vim-clang-format'
 let g:clang_format#style_options = {"BasedOnStyle" : "Mozilla"}
 
 " rust
-Plug 'rust-lang/rust.vim'
+" Plug 'rust-lang/rust.vim'
 
 " Autocomplete and other
 " Plug 'ycm-core/YouCompleteMe'
 " let g:UltiSnipsExpandTrigger = ";"
 
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_lint_on_text_changed = 'never'
