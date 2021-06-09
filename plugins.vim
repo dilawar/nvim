@@ -122,7 +122,7 @@ Plug 'alaviss/nim.nvim'
 " alternate
 Plug 'dilawar/a.vim'
 
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
 
 " Treesitter
