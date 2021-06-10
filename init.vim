@@ -1,4 +1,5 @@
 source ~/.config/nvim/plugins.vim
+
 scriptencoding utf-8
 filetype indent plugin on
 syntax sync fromstart
@@ -26,6 +27,10 @@ set clipboard+=unnamedplus
 
 set textwidth=80
 set colorcolumn=81
+
+" automatically chdir to file
+" set autochdir
+" autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
 
 colorscheme materialbox
 

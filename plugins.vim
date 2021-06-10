@@ -123,10 +123,14 @@ Plug 'alaviss/nim.nvim'
 Plug 'dilawar/a.vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" cmake and vim
+Plug 'vhdirk/vim-cmake'
+
 
 " Keep this at the end!
 call plug#end()
