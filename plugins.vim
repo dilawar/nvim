@@ -129,7 +129,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " cmake and vim
-Plug 'vhdirk/vim-cmake'
+Plug 'cdelledonne/vim-cmake'
 
 
 " Keep this at the end!
