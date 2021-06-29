@@ -1,7 +1,6 @@
 " Plugin manager provided by: https://github.com/junegunn/vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'plasticboy/vim-markdown'
 Plug 'roxma/vim-tmux-clipboard'
 
 " terminal
@@ -129,12 +128,22 @@ Plug 'junegunn/fzf.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " cmake and vim
-Plug 'cdelledonne/vim-cmake'
+" Plug 'cdelledonne/vim-cmake'
+Plug 'ilyachur/cmake4vim'
 
+" pandoc
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
 
 " Keep this at the end!
 call plug#end()
 
+"
+" Extra here
+"
 set termguicolors
 colorscheme onebuddy
 luafile $HOME/.config/nvim/lsp_config.lua
