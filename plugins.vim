@@ -135,7 +135,7 @@ Plug 'ilyachur/cmake4vim'
 " Markdown preview.
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-let g:mkdp_preview_options = {'uml': {'server': 'http://services.subcom.tech:8080'}}
+let g:mkdp_preview_options = {'uml': {'server': 'http://services.subcom.tech/plantuml'}}
 
 
 " pandoc
