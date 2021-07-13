@@ -135,14 +135,12 @@ Plug 'ilyachur/cmake4vim'
 " Markdown preview.
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+let g:mkdp_preview_options = {'uml': {'server': 'http://services.subcom.tech:8080'}}
 
 
 " pandoc
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-augroup pandoc_syntax
-    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc tw=80
-augroup END
 
 " Keep this at the end!
 call plug#end()
