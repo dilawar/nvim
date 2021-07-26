@@ -1,4 +1,4 @@
-execute 'source' . expand('<sfile>:p:h') . '/plugins.vim'
+execute 'source ' . expand('<sfile>:p:h') . '/plugins.vim'
 
 scriptencoding utf-8
 filetype indent plugin on

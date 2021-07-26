@@ -151,5 +151,5 @@ call plug#end()
 set termguicolors
 colorscheme onebuddy
 
-# will work on Windows as well.
+" will work on Windows as well.
 execute 'luafile ' . expand('<sfile>:p:h'). '/lsp_config.lua'
