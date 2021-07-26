@@ -150,4 +150,6 @@ call plug#end()
 "
 set termguicolors
 colorscheme onebuddy
-luafile $HOME/.config/nvim/lsp_config.lua
+
+# will work on Windows as well.
+execute 'luafile ' . expand('<sfile>:p:h'). '/lsp_config.lua'
