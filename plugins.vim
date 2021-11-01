@@ -86,8 +86,8 @@ Plug 'heavenshell/vim-pydocstring', {'do': 'make install'}
 let g:pydocstring_formatter = 'numpy'
 let g:pydocstring_doq_path = "$HOME/.local/bin/doq"
 
-" Doxygen
-Plug 'vim-scripts/DoxygenToolkit.vim'
+" Docs
+Plug 'kkoomen/vim-doge'
 
 " personal
 Plug 'ervandew/supertab'
@@ -137,6 +137,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 let g:mkdp_preview_options = {'uml': {'server': 'http://services.subcom.tech/plantuml'}}
 
+" rst
+Plug 'Rykka/riv.vim'
 
 " pandoc
 Plug 'vim-pandoc/vim-pandoc'
