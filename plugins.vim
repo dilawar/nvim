@@ -7,6 +7,7 @@ Plug 'roxma/vim-tmux-clipboard'
 Plug 'kassio/neoterm'
 
 Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -23,7 +24,7 @@ Plug 'WolfgangMehner/c-support'
 
 " clang-format'
 Plug 'rhysd/vim-clang-format'
-let g:clang_format#style_options = {"BasedOnStyle" : "Mozilla"}
+let g:clang_format#style_options = {"BasedOnStyle" : "Webkit"}
 
 " rust
 " Plug 'rust-lang/rust.vim'
@@ -146,8 +147,6 @@ call plug#end()
 "
 " Extra here
 "
-set termguicolors
-colorscheme onebuddy
 
 " will work on Windows as well.
 execute 'luafile ' . expand('<sfile>:p:h'). '/lsp_config.lua'
