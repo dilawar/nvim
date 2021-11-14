@@ -6,11 +6,7 @@ Plug 'roxma/vim-tmux-clipboard'
 " terminal
 Plug 'kassio/neoterm'
 
-" new setup for beta
-Plug 'tjdevries/colorbuddy.vim'
-Plug 'Th3Whit3Wolf/onebuddy', {'branch': 'main'}
 Plug 'neovim/nvim-lspconfig'
-Plug 'kabouzeid/nvim-lspinstall'
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -18,7 +14,7 @@ Plug 'airblade/vim-gitgutter'
 " Use my personal version until changes are accepted by @tpope
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
