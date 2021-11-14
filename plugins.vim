@@ -68,7 +68,7 @@ let g:snips_email = "dilawar.s.rajput@gmail.com"
 let g:snips_github = "https://github.com/dilawar"
 
 " python
-Plug 'dilawar/vim-mypy'
+"Plug 'dilawar/vim-mypy'
 
 " Easy align
 Plug 'junegunn/vim-easy-align'
@@ -140,6 +140,8 @@ Plug 'Rykka/riv.vim'
 " pandoc
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
+
+Plug 'rhysd/vim-grammarous'
 
 " Keep this at the end!
 call plug#end()
