@@ -78,6 +78,9 @@ Plug 'chrisbra/unicode.vim'
 " Turn TeX symbols into unicode.
 Plug 'dilawar/vim-unicoder'
 
+" Firenvim
+Plug 'glacambre/firenvim', {'do' : { _ -> firenvim#install(0) } }
+
 " pydocstring
 Plug 'heavenshell/vim-pydocstring', {'do': 'make install'}
 let g:pydocstring_formatter = 'numpy'
