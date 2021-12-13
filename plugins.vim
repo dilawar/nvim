@@ -20,7 +20,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
 " c-support
-Plug 'WolfgangMehner/c-support'
+Plug 'dilawar/c-support'
 
 " clang-format'
 Plug 'rhysd/vim-clang-format'
