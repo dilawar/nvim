@@ -1,4 +1,4 @@
-  SetMacro( 'AUTHOR',      'Dilawar Singh' )
-  SetMacro( 'AUTHORREF',   'dilawar' )
-  SetMacro( 'EMAIL',       'dilawar@subcom.tech' )
-  SetMacro( 'COPYRIGHT',   'Copyright (c) |YEAR|, |AUTHOR|' )
+SetMacro( 'AUTHOR',      'Dilawar Singh' )
+SetMacro( 'AUTHORREF',   'dilawar' )
+SetMacro( 'EMAIL',       'dilawar@subcom.tech' )
+SetMacro( 'COPYRIGHT',   'Copyright (c) |YEAR|, |AUTHOR|' )
