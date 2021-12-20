@@ -33,7 +33,7 @@ let g:clang_format#style_options = {"BasedOnStyle" : "Webkit"}
 " Plug 'ycm-core/YouCompleteMe'
 " let g:UltiSnipsExpandTrigger = ";"
 
-" Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_lint_on_text_changed = 'never'
@@ -47,6 +47,7 @@ let g:ale_linters = {
             \ 'javascript' : [ 'eslint'],
             \ 'rust' : [ 'analyzer', 'cargo'],
             \ 'php' : [ 'php-cs-fixer', 'psalm', 'php'],
+            \ 'nim' : [ 'nimlsp', 'nimcheck'],
             \}
 
 let g:ale_php_phpcs_executable='./vendor/bin/phpcs'
@@ -57,6 +58,8 @@ let g:ale_fixers={
         \ 'rust': ['rustfmt'],
         \ 'python': ['black'],
         \ 'javascript': ['eslint'],
+        \ 'nim': ['nimpretty'],
+        \ '*': ['remove_trailing_lines', 'trim_whitespace'],
         \}
 
 
