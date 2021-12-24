@@ -25,8 +25,8 @@ set expandtab
 " System clipboard
 set clipboard+=unnamedplus
 
-set textwidth=80
-set colorcolumn=81
+set textwidth=99
+set colorcolumn=100
 
 " automatically chdir to file
 " set autochdir
