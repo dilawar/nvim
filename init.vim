@@ -28,10 +28,6 @@ set clipboard+=unnamedplus
 set textwidth=99
 set colorcolumn=100
 
-" automatically chdir to file
-" set autochdir
-" autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
-
 colorscheme materialbox
 
 " Allow loading for folder specific vimrc files.
@@ -40,6 +36,10 @@ set secure
 
 " php is html first
 au BufRead,BufNew *.php :setlocal sw=2 tw=2 ts=2
+
+" rust set compiler to cargo
+au BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
+au BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs noremap <buffer> <F9> :make build<CR>compiler=cargo
 
 " Write to a temp file and read from it.
 vmap <leader>y :w! /tmp/vitmp<CR>
