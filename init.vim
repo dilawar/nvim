@@ -6,10 +6,10 @@ syntax sync fromstart
 
 set nostartofline
 set directory=~/tmp
-set foldmethod=syntax
-set foldlevelstart=80
-set incsearch
-set number
+" set foldmethod=syntax
+" set foldlevelstart=80
+" set incsearch
+" set number
 set relativenumber
 set showcmd
 set virtualedit=block
@@ -29,6 +29,11 @@ set textwidth=99
 set colorcolumn=100
 
 colorscheme materialbox
+
+" On windows, fix the python path
+if has('win32') || has('win64')
+    let g:python3_host_prog = "C:\\Python310\\python.exe"
+endif
 
 " Allow loading for folder specific vimrc files.
 set exrc

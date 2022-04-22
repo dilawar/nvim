@@ -15,19 +15,19 @@ Plug 'airblade/vim-gitgutter'
 " Use my personal version until changes are accepted by @tpope
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
 " c-support
-Plug 'dilawar/c-support'
+" Plug 'dilawar/c-support'
 
 " clang-format'
 Plug 'rhysd/vim-clang-format'
 let g:clang_format#style_options = {"BasedOnStyle" : "Webkit"}
 
 " rust
-" Plug 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim'
 
 " Autocomplete and other
 " Plug 'ycm-core/YouCompleteMe'
