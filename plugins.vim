@@ -67,7 +67,7 @@ let g:ale_fixers={
 Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
 let g:snips_author = "Dilawar Singh"
-let g:snips_email = "dilawar.s.rajput@gmail.com"
+let g:snips_email = "dilawar@subcom.tech"
 let g:snips_github = "https://github.com/dilawar"
 
 " python
