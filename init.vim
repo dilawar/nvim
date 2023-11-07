@@ -72,3 +72,6 @@ let mapleader="\\"
 augroup pandoc_syntax
     au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown tw=80
 augroup END
+
+# msys2 workaround
+let &shellcmdflag = '-c'
