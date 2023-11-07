@@ -1,5 +1,5 @@
+set rtp +=~/.config/nvim
 execute 'source ' . expand('<sfile>:p:h') . '/plugins.vim'
-
 scriptencoding utf-8
 filetype indent plugin on
 syntax sync fromstart
@@ -73,5 +73,5 @@ augroup pandoc_syntax
     au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown tw=80
 augroup END
 
-# msys2 workaround
+" msys2 workaround
 let &shellcmdflag = '-c'
