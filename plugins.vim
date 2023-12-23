@@ -164,7 +164,6 @@ call plug#end()
 " will work on Windows as well.
 execute 'luafile ' . expand('<sfile>:p:h'). '/lsp_config.lua'
 
-
 " From https://github.com/hrsh7th/nvim-cmp
 set completeopt=menu,menuone,noselect
 

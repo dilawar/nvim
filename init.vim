@@ -32,26 +32,21 @@ colorscheme materialbox
 
 " On windows, fix the python path
 if has('win32') || has('win64')
-    let g:python3_host_prog = "C:\\Python310\\python.exe"
+    let g:python3_host_prog = "C:\\Python312\\python.exe"
 endif
 
 " Allow loading for folder specific vimrc files.
 set exrc
 set secure
 
-" php is html first
-au BufRead,BufNew *.php :setlocal sw=2 tw=2 ts=2
-
 " rust set compiler to cargo
 au BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs compiler cargo
 au BufRead,BufNewFile Cargo.toml,Cargo.lock,*.rs noremap <buffer> <F9> :make build<CR>compiler=cargo
 
 " Write to a temp file and read from it.
-vmap <leader>y :w! /tmp/vitmp<CR>
-nmap <leader>y :w! /tmp/vitmp<CR>
-nmap <leader>p :r! cat /tmp/vitmp<CR>
-
-au BufNewFile,BufRead *.vue,*.js,*.html setlocal expandtab ts=2 sw=2
+vmap <leader>y :w! ~/.vitmp<CR>
+nmap <leader>y :w! ~/.vitmp<CR>
+nmap <leader>p :r! ~/.vitmp<CR>
 
 " errorformat. dont stop at warning
 " See https://stackoverflow.com/a/14871596/1805129
