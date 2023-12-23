@@ -3,11 +3,12 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'roxma/vim-tmux-clipboard'
 
-" terminal
-Plug 'kassio/neoterm'
-
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
+
+" toggle term (persistant terminal)
+Plug 'akinsho/toggleterm.nvim', { 'tag' : '*' }
+lua require("toggleterm").setup()
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -37,10 +38,6 @@ let g:clang_format#style_options = {"BasedOnStyle" : "Webkit"}
 
 " rust
 Plug 'rust-lang/rust.vim'
-
-" Autocomplete and other
-" Plug 'ycm-core/YouCompleteMe'
-" let g:UltiSnipsExpandTrigger = ";"
 
 Plug 'dense-analysis/ale'
 let g:airline#extensions#ale#enabled = 1
