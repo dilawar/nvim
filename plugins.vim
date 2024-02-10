@@ -6,9 +6,9 @@ Plug 'roxma/vim-tmux-clipboard'
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 
-" toggle term (persistant terminal)
-Plug 'akinsho/toggleterm.nvim', { 'tag' : '*' }
-lua require("toggleterm").setup()
+"" toggle term (persistant terminal)
+"Plug 'akinsho/toggleterm.nvim', { 'tag' : '*' }
+"lua require("toggleterm").setup()
 
 " git
 Plug 'airblade/vim-gitgutter'
