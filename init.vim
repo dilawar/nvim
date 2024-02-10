@@ -69,4 +69,6 @@ augroup pandoc_syntax
 augroup END
 
 " msys2 workaround
-set shellcmdflag='-c'
+if !empty($MSYSTEM)
+    set shellcmdflag='-c'
+endif
