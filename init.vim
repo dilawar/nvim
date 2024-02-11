@@ -5,17 +5,17 @@ filetype indent plugin on
 syntax sync fromstart
 
 set nostartofline
-set directory=~/tmp
-" set foldmethod=syntax
-" set foldlevelstart=80
-" set incsearch
-" set number
+set directory=~/.cache/vim
+"set foldmethod=syntax
+"set foldlevelstart=80
+set incsearch
+set number
 set relativenumber
 set showcmd
 set virtualedit=block
 set norelativenumber
 
-set undodir=$HOME/.undodir
+set undodir=$HOME/.cache/vim/undodir
 set undofile
 
 set tabstop=4
