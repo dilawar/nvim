@@ -68,6 +68,15 @@ let g:ale_fixers={
         \ '*': ['remove_trailing_lines', 'trim_whitespace'],
         \}
 
+let g:ale_rust_rustfmt_options = '+nightly'
+let g:ale_rust_cargo_use_clippy = 1
+let g:ale_rust_rls_toolchain = 'nightly'
+let g:ale_rust_rls_config = {
+                \   'rust': {
+                \     'clippy_preference': 'on'
+                \   }
+                \ }
+
 
 " Snippets
 Plug 'SirVer/ultisnips'
