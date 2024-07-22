@@ -79,11 +79,13 @@ let g:ale_rust_rls_config = {
 
 
 " Snippets
-Plug 'SirVer/ultisnips'
+Plug 'dcampos/nvim-snippy'
 Plug 'dilawar/vim-snippets'
-let g:snips_author = "Dilawar Singh"
-let g:snips_email = "dilawar@subcom.tech"
-let g:snips_github = "https://github.com/dilawar"
+imap <expr> <Tab> snippy#can_expand_or_advance() ? '<Plug>(snippy-expand-or-advance)' : '<Tab>'
+imap <expr> <S-Tab> snippy#can_jump(-1) ? '<Plug>(snippy-previous)' : '<S-Tab>'
+smap <expr> <Tab> snippy#can_jump(1) ? '<Plug>(snippy-next)' : '<Tab>'
+smap <expr> <S-Tab> snippy#can_jump(-1) ? '<Plug>(snippy-previous)' : '<S-Tab>'
+xmap <Tab> <Plug>(snippy-cut-text)
 
 " python
 "Plug 'dilawar/vim-mypy'
@@ -178,15 +180,6 @@ lua <<EOF
   local cmp = require'cmp'
 
   cmp.setup({
-    snippet = {
-      -- REQUIRED - you must specify a snippet engine
-      expand = function(args)
-        -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
-        -- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
-        -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
-        vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
-      end,
-    },
     window = {
       -- completion = cmp.config.window.bordered(),
       -- documentation = cmp.config.window.bordered(),
