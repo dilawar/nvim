@@ -79,8 +79,8 @@ let g:ale_rust_rls_config = {
 
 
 " Snippets
-" Plug 'SirVer/ultisnips'
-" Plug 'dilawar/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'dilawar/vim-snippets'
 let g:snips_author = "Dilawar Singh"
 let g:snips_email = "dilawar@subcom.tech"
 let g:snips_github = "https://github.com/dilawar"
