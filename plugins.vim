@@ -79,7 +79,7 @@ let g:ale_rust_rls_config = {
 
 
 " Snippets
-Plugin 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
