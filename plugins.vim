@@ -79,13 +79,11 @@ let g:ale_rust_rls_config = {
 
 
 " Snippets
-Plug 'dcampos/nvim-snippy'
+Plugin 'SirVer/ultisnips'
 Plug 'dilawar/vim-snippets'
-imap <expr> <Tab> snippy#can_expand_or_advance() ? '<Plug>(snippy-expand-or-advance)' : '<Tab>'
-imap <expr> <S-Tab> snippy#can_jump(-1) ? '<Plug>(snippy-previous)' : '<S-Tab>'
-smap <expr> <Tab> snippy#can_jump(1) ? '<Plug>(snippy-next)' : '<Tab>'
-smap <expr> <S-Tab> snippy#can_jump(-1) ? '<Plug>(snippy-previous)' : '<S-Tab>'
-xmap <Tab> <Plug>(snippy-cut-text)
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " python
 "Plug 'dilawar/vim-mypy'
