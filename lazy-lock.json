@@ -53,6 +53,7 @@
   "rustaceanvim": { "branch": "master", "commit": "6bd02e97a1f3102f06a72726764f24d3b3a33a85" },
   "snacks.nvim": { "branch": "main", "commit": "836e07336ba523d4da480cd66f0241815393e98e" },
   "supermaven-nvim": { "branch": "main", "commit": "07d20fce48a5629686aefb0a7cd4b25e33947d50" },
+  "tiny-inline-diagnostic.nvim": { "branch": "main", "commit": "71f998696a4d63a1fa42a6c70d5931a2001e485b" },
   "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" },
   "tokyonight.nvim": { "branch": "main", "commit": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd" },
   "trouble.nvim": { "branch": "main", "commit": "bd67efe408d4816e25e8491cc5ad4088e708a69a" },
