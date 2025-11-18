@@ -30,7 +30,7 @@ return {
       },
       formatters = {
         clang_format = {
-          prepend_args = { "--style=file", "--fallback-style=LLVM" },
+          prepend_args = { "--style=file", "--fallback-style=Webkit" },
         },
         shfmt = {
           prepend_args = { "-i", "4" },
