@@ -9,6 +9,9 @@ return {
     "mrcjkb/rustaceanvim",
     opts = {
       server = {
+        on_attach = function(client, bufnr)
+          client.server_capabilities.semanticTokensProvider = nil
+        end,
         default_settings = {
           ["rust-analyzer"] = {
             cargo = {
@@ -27,6 +30,14 @@ return {
             },
           },
         },
+      },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      inlay_hints = {
+        exclude = { "rust", "vue" },
       },
     },
   },
