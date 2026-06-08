@@ -25,6 +25,17 @@ return {
             diagnostics = {
               enable = false,
             },
+            files = {
+              excludeDirs = {
+                ".git",
+                "bazel-bin",
+                "bazel-out",
+                "bazel-testlogs",
+                "bazel-p21-embedded",
+                "target",
+                "node_modules",
+              },
+            },
             procMacro = {
               enable = false,
             },
