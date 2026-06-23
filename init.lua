@@ -12,3 +12,6 @@ vim.api.nvim_create_autocmd("BufReadPre", {
     end
   end,
 })
+
+vim.opt.exrc = true -- allow project-local config files
+vim.opt.secure = true -- sandbox them (no shell commands etc.)
