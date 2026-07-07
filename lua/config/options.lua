@@ -5,3 +5,26 @@
 local opt = vim.opt
 opt.shiftwidth = 4
 opt.tabstop = 4
+
+--- local
+vim.api.nvim_create_autocmd("BufReadPre", {
+  pattern = "*",
+  callback = function()
+    local local_script = "./.make.sh"
+    if vim.fn.filereadable(local_script) == 1 then
+      -- % expands to the current file name, you can adjust the arguments
+      vim.g.makeprg = local_script .. " %"
+      -- print("callback: .make.sh found", vim.g.makeprg)
+    end
+  end,
+})
+
+vim.g.exrc = true -- allow project-local config files
+vim.g.secure = true -- sandbox them (no shell commands etc.)
+
+if vim.fn.executable("nvr") == 1 then
+  local nvr = "nvr --servername " .. vim.v.servername .. " "
+  vim.env.GIT_EDITOR = nvr .. "-cc split +'setl bh=delete' --remote-wait"
+  vim.env.EDITOR = nvr .. "-l --remote" -- (Optional)
+  vim.env.VISUAL = nvr .. "-l --remote" -- (Optional)
+end
