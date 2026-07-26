@@ -19,6 +19,7 @@ vim.api.nvim_create_autocmd("BufReadPre", {
   end,
 })
 
+vim.g.lazyvim_python_lsp = "ty"
 vim.g.exrc = true -- allow project-local config files
 vim.g.secure = true -- sandbox them (no shell commands etc.)
 
