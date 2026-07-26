@@ -1,10 +1,6 @@
 return {
   "saghen/blink.cmp",
   opts = {
-    -- Root configuration fallback
-    show_on_keyword = false,
-    show_on_trigger_character = false,
-
     -- Nested block configuration fallback
     completion = {
       trigger = {
