@@ -26,7 +26,6 @@
     "lazyvim.plugins.extras.lang.sql",
     "lazyvim.plugins.extras.lang.tex",
     "lazyvim.plugins.extras.lang.toml",
-    "lazyvim.plugins.extras.lang.twig",
     "lazyvim.plugins.extras.lang.typst",
     "lazyvim.plugins.extras.lang.vue",
     "lazyvim.plugins.extras.lang.yaml",
