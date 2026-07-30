@@ -29,3 +29,11 @@ if vim.fn.executable("nvr") == 1 then
   vim.env.EDITOR = nvr .. "-l --remote" -- (Optional)
   vim.env.VISUAL = nvr .. "-l --remote" -- (Optional)
 end
+
+-- Enable patchmode to generate a .orig backup file on the first save
+vim.opt.patchmode = ".orig"
+vim.opt.backupdir = vim.fn.stdpath("data") .. "/backup//"
+local backup_dir = vim.fn.expand(vim.opt.backupdir._value:match("(.*)//$") or vim.opt.backupdir._value)
+if vim.fn.isdirectory(backup_dir) == 0 then
+  vim.fn.mkdir(backup_dir, "p")
+end
