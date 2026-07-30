@@ -14,7 +14,7 @@ return {
           local merge_base = handle:read("*a")
           handle:close()
           vim.notify("Gitdiff merge-base: " .. merge_base)
-          local cmd = string.format("DiffviewOpen %s...HEAD --imply-local", merge_base)
+          local cmd = string.format("DiffviewOpen %s", merge_base)
           vim.cmd(cmd)
           vim.notify("Diffing against branching point: " .. merge_base, vim.log.levels.INFO)
         end,
