@@ -4,15 +4,13 @@
 
 local opt = vim.opt
 
---- local
-vim.api.nvim_create_autocmd("BufReadPre", {
-  pattern = "*",
+--- locate .make.sh (upwards upto home) and set it a makeprg
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   callback = function()
-    local local_script = "./.make.sh"
-    if vim.fn.filereadable(local_script) == 1 then
-      -- % expands to the current file name, you can adjust the arguments
-      vim.g.makeprg = local_script .. " %"
-      -- print("callback: .make.sh found", vim.g.makeprg)
+    local root =
+      vim.fs.find(".make.sh", { upward = true, path = vim.fn.expand("%:p:h"), stop = vim.loop.os_homedir() })[1]
+    if root then
+      vim.opt_local.makeprg = vim.fn.fnameescape(root)
     end
   end,
 })
