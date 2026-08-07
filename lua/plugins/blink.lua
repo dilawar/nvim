@@ -12,12 +12,12 @@ return {
       ghost_text = { enabled = false },
       documentation = { auto_show = false },
     },
-
     keymap = {
+<<<<<<< HEAD
       preset = "default",
       ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+      preset = "super-tab",
     },
-
     sources = {
       providers = {
         snippets = {
