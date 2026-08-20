@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 local opt = vim.opt
+opt.exrc = true -- allow project-local config files
 
 --- locate .make.sh (upwards upto home) and set it a makeprg
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
@@ -16,7 +17,6 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 })
 
 vim.g.lazyvim_python_lsp = "ty"
-vim.g.exrc = true -- allow project-local config files
 vim.g.secure = true -- sandbox them (no shell commands etc.)
 
 if vim.fn.executable("nvr") == 1 then
