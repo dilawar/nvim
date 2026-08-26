@@ -47,6 +47,15 @@ return {
           gs.change_base(base)
           vim.notify("Gitsigns base: " .. base .. " (" .. upstream .. ")")
         end, { buffer = bufnr, desc = "Git signs: merge-base base" })
+
+        vim.keymap.set("n", "<leader>guB", function()
+          local script_path = "./lua/plugins/git_find_nearest_branching_point.sh"
+          local handle = io.popen("bash " .. script_path)
+          local base = handle:read("*a")
+          handle:close()
+          gs.change_base(base)
+          vim.notify("Gitsigns base: " .. base)
+        end, { buffer = bufnr, desc = "Git signs: nearest branching-point" })
       end
     end,
   },
