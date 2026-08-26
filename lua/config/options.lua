@@ -37,3 +37,6 @@ local backup_dir = vim.fn.expand(vim.opt.backupdir._value:match("(.*)//$") or vi
 if vim.fn.isdirectory(backup_dir) == 0 then
   vim.fn.mkdir(backup_dir, "p")
 end
+
+-- env
+vim.env.GOROOT = "/opt/homebrew/Cellar/go/1.26.5/libexec"
