@@ -3,8 +3,6 @@
 -- Add any additional options here
 
 local opt = vim.opt
-opt.shiftwidth = 4
-opt.tabstop = 4
 
 --- local
 vim.api.nvim_create_autocmd("BufReadPre", {
