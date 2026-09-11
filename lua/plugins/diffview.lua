@@ -20,6 +20,18 @@ return {
         end,
         desc = "Git Diff From Branching Point",
       },
+      {
+        "<leader>gd",
+        function()
+          if next(require("diffview.lib").views) == nil then
+            vim.cmd("DiffviewOpen")
+          else
+            vim.cmd("DiffviewClose")
+          end
+        end,
+        desc = "Toggle Diffview",
+      },
+      { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "Current File History" },
     },
     config = function()
       require("diffview").setup({
