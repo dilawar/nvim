@@ -3,7 +3,7 @@ return {
   optional = true,
   opts = {
     completion = {
-      menu = { completion = false },
+      menu = { auto_show = false },
     },
     keymap = {
       preset = "enter",
