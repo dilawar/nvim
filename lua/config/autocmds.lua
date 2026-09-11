@@ -20,3 +20,4 @@ end
 set_autoformat({ "cpp" }, false)
 set_autoformat({ "c" }, false)
 set_autoformat({ "yaml" }, false)
+set_autoformat({ "markdown" }, false)

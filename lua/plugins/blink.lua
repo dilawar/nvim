@@ -1,10 +1,9 @@
 return {
   "saghen/blink.cmp",
+  optional = true,
   opts = {
-    keymap = {
-      preset = "enter",
-      ["<S-Tab>"] = { "select_prev", "fallback" },
-      ["<Tab>"] = { "select_next", "fallback" },
+    completion = {
+      menu = { auto_show = false },
     },
   },
 }
