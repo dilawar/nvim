@@ -5,7 +5,7 @@
 local opt = vim.opt
 opt.exrc = true -- allow project-local config files
 
---- locate .make.sh (upwards upto home) and set it a makeprg
+-- locate .make.sh (upwards upto home) and set it a makeprg
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   callback = function()
     local root =
@@ -25,6 +25,3 @@ if vim.fn.executable("nvr") == 1 then
   vim.env.EDITOR = nvr .. "-l --remote" -- (Optional)
   vim.env.VISUAL = nvr .. "-l --remote" -- (Optional)
 end
-
--- env
-vim.env.GOROOT = "/opt/homebrew/Cellar/go/1.26.5/libexec"
