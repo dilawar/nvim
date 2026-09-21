@@ -4,6 +4,7 @@ return {
   opts = {
     completion = {
       menu = { auto_show = false },
+      ghost_text = { enable = false },
     },
   },
 }
