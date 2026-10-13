@@ -16,6 +16,7 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   end,
 })
 
+vim.g.autoformat = false
 vim.g.lazyvim_python_lsp = "ty"
 vim.g.secure = true -- sandbox them (no shell commands etc.)
 
