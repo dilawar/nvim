@@ -4,6 +4,7 @@
 
 local opt = vim.opt
 opt.exrc = true -- allow project-local config files
+opt.relativenumber = false
 
 -- locate .make.sh (upwards upto home) and set it a makeprg
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
