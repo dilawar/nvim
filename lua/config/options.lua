@@ -20,10 +20,3 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 vim.g.autoformat = false
 vim.g.lazyvim_python_lsp = "ty"
 vim.g.secure = true -- sandbox them (no shell commands etc.)
-
-if vim.fn.executable("nvr") == 1 then
-  local nvr = "nvr --servername " .. vim.v.servername .. " "
-  vim.env.GIT_EDITOR = nvr .. "-cc split +'setl bh=delete' --remote-wait"
-  vim.env.EDITOR = nvr .. "-l --remote" -- (Optional)
-  vim.env.VISUAL = nvr .. "-l --remote" -- (Optional)
-end
