@@ -22,10 +22,34 @@ return {
 
       opts.on_attach = function(bufnr)
         if orig_on_attach then
-          orig_on_attach(bufnr)
+          if orig_on_attach(bufnr) == false then
+            return false
+          end
         end
 
         local gs = require("gitsigns")
+        local function branching_point(notify)
+          local cwd = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(bufnr), ":p:h")
+          local base, ref = require("config.git_base").resolve(cwd)
+          if base then
+            vim.api.nvim_buf_call(bufnr, function()
+              gs.change_base(base)
+            end)
+          end
+          if notify then
+            vim.notify(
+              base and ("Gitsigns base: " .. base .. " (" .. ref .. ")")
+                or ("Cannot find branching point against " .. ref),
+              base and vim.log.levels.INFO or vim.log.levels.WARN
+            )
+          end
+        end
+
+        vim.schedule(function()
+          if vim.api.nvim_buf_is_loaded(bufnr) then
+            branching_point(false)
+          end
+        end)
 
         vim.keymap.set("n", "<leader>gui", function()
           gs.reset_base()
@@ -49,15 +73,7 @@ return {
         end, { buffer = bufnr, desc = "Git signs: merge-base base" })
 
         vim.keymap.set("n", "<leader>guB", function()
-          local current_file = debug.getinfo(1, "S").source:sub(2)
-          local script_dir = vim.fs.dirname(current_file)
-
-          local script_path = script_dir .. "/git_find_nearest_branching_point.sh"
-          local handle = io.popen("bash " .. script_path)
-          local base = handle:read("*a")
-          handle:close()
-          gs.change_base(base)
-          vim.notify("Gitsigns base: " .. base)
+          branching_point(true)
         end, { buffer = bufnr, desc = "Git signs: nearest branching-point" })
       end
     end,
